@@ -1,6 +1,6 @@
 # www-doele
 
-`O projeto DOELÊ é um software que visa atender o público que deseja doar e receber livros usados. Nosso sistema busca divulgar os livros do usuário e fazer intermédio entre o anunciante e o interessado.`
+O projeto DOELÊ é um software que visa atender o público que deseja doar e receber livros usados. Nosso sistema busca divulgar os livros do usuário e fazer intermédio entre o anunciante e o interessado.
 
 ## Início
 
