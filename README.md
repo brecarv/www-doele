@@ -1,6 +1,6 @@
 # www-doele
 
-`Breve descrição do projeto.`
+`O projeto DOELÊ é um software que visa atender o público que deseja doar e receber livros usados. Nosso sistema busca divulgar os livros do usuário e fazer intermédio entre o anunciante e o interessado.`
 
 ## Início
 
@@ -79,7 +79,11 @@ Veja o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para maiores detalhes.
 
 ## Equipe de desenvolvimento
 
-* **NOME COMPLETO** - *email@dominio.com*
+* **Luca Gouveia** - *luca.gouveia@academico.ifrn.edu.br*
+* **Emerson Carvalho** - *brecarv@outlook.com*
+* **Gerson Rosa** - *gerson.j@academico.ifrn.edu.br*
+* **Daniel Farias** - *danielfarias.ev@gmail.com*
+* **Arthur Meireles** - *arthurmeireles070@gmail.com*
 
 ## Licença
 
