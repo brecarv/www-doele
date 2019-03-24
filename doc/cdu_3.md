@@ -1,47 +1,59 @@
 # Especificação de Caso de Uso  `<Nome do Projeto>`
 
-# UC: `<Nome do caso de uso>`  
-
-`Observacao: O texto em vermelho foi incluído para orientar o autor e deve ser excluído antes da publicação do documento.
- Ao preencher seu texto, insira como texto normal`  
+# CDU03: **Cadastrar Livro**   
 
 ## 1. Resumo
 
-`Breve descrição do caso de uso`
+O usuário logado preenche os dados do livro no formulário de cadastro e recebe a confirmação de que o livro foi cadastrado com sucesso no sistema.
 
 ## 2. Atores
 
-`Atores envolvidos no caso de uso`
+* Doador
 
 ## 3. Precondições
 
-###  3.1 `Nome da Precondição 1`  
+###  3.1 Estar logado  
 
-`Estado que o sistema deve apresentar antes da realização do caso de uso, por exemplo: deve estar logado`
+O usuário precisa ter passado pelo processo de login.
 
 ## 4. Pós-condições
-### 4.1 `Nome da Pós-condição 1`
+### 4.1 Livros e quantidades associadas ao doador
 
-`Possível estado que o sistema deve apresentar após a realização do caso de uso, por exemplo: registro deve estar cadastrado`
+Os itens e suas respectivas quantidades serão associadas ao histórico do doador.
 
 ## 5. Pontos de Extensão
-### 5.1 `Nome do Ponto de extensão 1`
 
-`Definição e localização do ponto de extensão no fluxo do caso de uso`
+Não identificados.
 
 ## 6. Fluxos de Evento
 
 ### 6.1 Fluxo Básico
 
-`Fluxo principal, o mais corriqueiro dentro do caso de uso. É interessante que cada passo do fluxo seja numerado`
+1. o ator seleciona a opção "cadastrar livros";
+1. o sistema solicita a entrada de alguns dados (nome do livro, nome do autor, edição, ano e etc);
+1. o ator insere os dados solicitados;
+1. o sistema exibe o formulário cadastrado e pergunta se o ator deseja adicionar mais itens;
+1. o ator informa que "não";
+1. o CDU é finalizado e é exibido na tela principal.
 
-### 6.2 `Nome do Fluxo alternativo 1`
 
-`Fluxo alternativo, outro fluxo que o caso de uso pode apresentar e não é o fluxo principal, ou que é uma continuação do fluxo principal. É interessante que cada passo do fluxo seja numerado`
+### 6.2 (4A) Há um livro registrado 
 
-### 6.3 `Nome do Fluxo de Exceção 1`
+1. o sistema informa que há um livro com esse nome já registrado;
+1. o ator informa que deseja cadastrar;
+1. o sistema retorna ao passo 4 do fluxo principal.
 
-`Mesma coisa que o fluxo alternativo, porém descrevendo exceções em geral. É interessante que cada passo do fluxo seja numerado`
+
+### 6.3 (4B) Há um livro registrado
+
+1. o sistema informa que há um livro com esse nome já registrado;
+1. o ator informa que **NÃO** deseja cadastrar;
+1. o sistema retorna ao passo 6 do fluxo principal.
+
+### 6.4 (11A) O ator deseja cadastrar mais livros
+
+1. o ator informa que **SIM** - deseja cadastrar mais livros;
+1. o sistema retorna ao passo 2 do fluxo principal.
 
 ## 7. Protótipos de Interface do Caso de Uso
 
