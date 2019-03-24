@@ -1,47 +1,60 @@
-# Especificação de Caso de Uso  `<Nome do Projeto>`
+# Especificação de Caso de Uso do Projeto Doelê
 
-# UC: `<Nome do caso de uso>`  
-
-`Observacao: O texto em vermelho foi incluído para orientar o autor e deve ser excluído antes da publicação do documento.
- Ao preencher seu texto, insira como texto normal`  
+# CDU05: **Solicitar Livro**  
 
 ## 1. Resumo
 
-`Breve descrição do caso de uso`
+O usuário logado busca por um livro e confirma seu interesse em receber a doação.
 
 ## 2. Atores
 
-`Atores envolvidos no caso de uso`
+* Donatário;
+* Doador;
 
 ## 3. Precondições
 
-###  3.1 `Nome da Precondição 1`  
+###  3.1 Estar logado  
 
-`Estado que o sistema deve apresentar antes da realização do caso de uso, por exemplo: deve estar logado`
+O usuário deve estar logado no sistema.
+
+###  3.2 Ter feito cadastro de livros
+
+O usuário deve ter feito cadastro de livros no sistema.
+
+###  3.3 Ter feito doações
+
+O usuário já precisa ter realizado doações de livros.
 
 ## 4. Pós-condições
-### 4.1 `Nome da Pós-condição 1`
+### 4.1 A solicitação será notificada ao doador
 
-`Possível estado que o sistema deve apresentar após a realização do caso de uso, por exemplo: registro deve estar cadastrado`
+A solicitação será notificada ao doador para que este juntamente ao donatário decidam a melhor forma de realizar esta doação.
 
 ## 5. Pontos de Extensão
-### 5.1 `Nome do Ponto de extensão 1`
 
-`Definição e localização do ponto de extensão no fluxo do caso de uso`
+Não identificados.
 
 ## 6. Fluxos de Evento
 
 ### 6.1 Fluxo Básico
 
-`Fluxo principal, o mais corriqueiro dentro do caso de uso. É interessante que cada passo do fluxo seja numerado`
+1. o ator seleciona a opção "Tenho Interesse";
+1. o sistema mostra uma mensagem de confirmação com os dados do livro;
+1. o ator seleciona **SIM**;
+1. o sistema envia uma notificação ao doador;
+1. o CDU é finalizado e é exibida a tela principal.
 
-### 6.2 `Nome do Fluxo alternativo 1`
+### (2A) 6.2 Há outros interessados no livro;
 
-`Fluxo alternativo, outro fluxo que o caso de uso pode apresentar e não é o fluxo principal, ou que é uma continuação do fluxo principal. É interessante que cada passo do fluxo seja numerado`
+1. o sistema informa que outras pessoas demonstraram interesse e pergunta se o donatário tem interesse;
+1. o ator informa que **SIM**;
+1. o sistema volta ao passo 4 do fluxo principal.
 
-### 6.3 `Nome do Fluxo de Exceção 1`
+### (2B) 6.3 Há outros interessados no livro;
 
-`Mesma coisa que o fluxo alternativo, porém descrevendo exceções em geral. É interessante que cada passo do fluxo seja numerado`
+1. o sistema informa que outras pessoas demonstraram interesse e pergunta se o donatário tem interesse;
+1. o ator informa que **NÃO**;
+1. o sistema volta ao passo 5 do fluxo principal.
 
 ## 7. Protótipos de Interface do Caso de Uso
 

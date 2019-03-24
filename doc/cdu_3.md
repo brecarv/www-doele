@@ -1,4 +1,4 @@
-# Especificação de Caso de Uso  `<Nome do Projeto>`
+# Especificação de Caso de Uso do Projeto Doelê
 
 # CDU03: **Cadastrar Livro**   
 
@@ -33,7 +33,7 @@ Não identificados.
 1. o sistema solicita a entrada de alguns dados (nome do livro, nome do autor, edição, ano e etc);
 1. o ator insere os dados solicitados;
 1. o sistema exibe o formulário cadastrado e pergunta se o ator deseja adicionar mais itens;
-1. o ator informa que "não";
+1. o ator informa que **NÃO**;
 1. o CDU é finalizado e é exibido na tela principal.
 
 
