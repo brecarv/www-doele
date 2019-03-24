@@ -15,13 +15,17 @@
 
 | Cod. | Nome | Descrição | Categoria |
 | -------- | -------- | -------- | -------- |
-| F01 | Nome do Requisito |	Texto descrevendo o requisito |	Evidente\Oculto|
+| F01 | Registro no sistema | O usuário fará login no sistema para ter acesso ao material disponível no site. |	Evidente|
+| F02 | Cadastro de livros | O usuário ao fazer login no sistema poderá cadastrar livros para doação. | Evidente|
+| F03 | Busca de livros | O usuário que acessar o sistema poderá buscar pelos livros anunciados. | Evidente|
+| F04 | Solicitação de livros| O usuário logado no sistema poderá demonstrar interesse em um livro anunciado. | Evidente|
 
 ### 2.2 Requisitos não funcionais
 
 | Cod. | Nome | Descrição | Categoria |
 | -------- | -------- | -------- | -------- |
-| NF01 | Nome do Requisito |	Texto descrevendo o requisito |	Desejável\Obrigatório|
+| NF01 | Aplicação Web | A aplicação deverá ser inicialmente em um sistema Web. | Obrigatório|
+| NF02 | Play Framework | A aplicação deverá ser inicialmente desenvolvida utilizando o play framework. | Obrigatório|
 
 ### 2.3 Tabela de Referência - Requisitos
 
