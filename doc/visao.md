@@ -36,7 +36,7 @@
 
 ### 2.5. Casos de Uso
 
-| Cod. | Nome | Descrição | Categoria |
+| Cod. | Caso de Uso | Descrição | Classificação |
 | -------- | -------- | -------- | -------- |
 | UC01 | Cadastrar Usuário | O usuário preenche os dados solicitados no formulário de registro e recebe uma confirmação do cadastro | Primário |
 | UC02 | Logar Usuário | O usuário preenche o formulário de login com o email e a senha e é autenticado no sistema | Secundário |
