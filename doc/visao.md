@@ -32,7 +32,7 @@
 
 ### 2.4 Diagrama Geral de Casos de Uso
 
-    Diagrama de casos de uso
+![Diagrama de casos de uso](diagrama-cdu.jpeg)
 
 ### 2.5. Casos de Uso
 
