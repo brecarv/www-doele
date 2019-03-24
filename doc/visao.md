@@ -36,9 +36,14 @@
 
 ### 2.5. Casos de Uso
 
-| Cod. | Caso de Uso | Descrição | Classificação |
+| Cod. | Nome | Descrição | Categoria |
 | -------- | -------- | -------- | -------- |
-| UC01 | Nome do Caso de Uso |	Texto explicando a função do caso de uso |	Primário\Secundário |
+| UC01 | Cadastrar Usuário | O usuário preenche os dados solicitados no formulário de registro e recebe uma confirmação do cadastro | Primário |
+| UC02 | Logar Usuário | O usuário preenche o formulário de login com o email e a senha e é autenticado no sistema | Secundário |
+| UC03 | Cadastrar Livro | O usuário logado preenche os dados do livro no formulário de cadastro e recebe a confirmação de que o livro foi cadastrado com sucesso no sistema | Primário |
+| UC04 | Buscar Livro | O usuário digita o nome de um livro no campo de busca | Primário |
+| UC05 | Solicitar Livro | O usuário logado busca por um livro e confirma seu interesse em receber a doação | Primário |
+| UC06 | Confirmar Solicitação de Livro | O usuário doador recebe uma notificação informando que um usuário demonstrou interesse em seu livro anunciado | Primário |
 
 ### 2.6. Tabela de Referência - Casos de uso & Requisitos
 
