@@ -57,16 +57,17 @@ Não identificados.
 
 ## 7. Protótipos de Interface do Caso de Uso
 
-`imagem do protótipo, é feita na disciplina de implementação e testes`
+![Cadastrar Livro](cdu3-image.png)
 
 ## 8. Diagrama de Atividades do Caso de Uso
 
-`imagem do diagrama, feito na disciplina de análise e projeto`
+![Diagrama de caso de uso](diagrama-cdu.jpeg)
 
 ## 9. Diagrama de Projeto do Caso de Uso
 
-`imagem do diagrama de classes de projeto, feito na disciplina de análise e projeto`
+O diagrama ainda não foi feito.
 
 ## 10. Diagrama de Sequência do Caso de Uso
 
-`imagem do diagrama, feito na disciplina de análise e projeto`
+![Diagrama de caso de uso](diagrama-cdu.jpeg)
+

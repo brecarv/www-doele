@@ -38,7 +38,7 @@ Não identificados.
 
 ### 6.1 Fluxo Básico
 
-1. o ator seleciona a opção "Tenho Interesse";
+1. o donatário insere o email, uma mensagem para o doador e seleciona a opção "Tenho Interesse";
 1. o sistema mostra uma mensagem de confirmação com os dados do livro;
 1. o ator seleciona **SIM**;
 1. o sistema envia uma notificação ao doador;
@@ -58,16 +58,16 @@ Não identificados.
 
 ## 7. Protótipos de Interface do Caso de Uso
 
-`imagem do protótipo, é feita na disciplina de implementação e testes`
+![Solicitar Livro](cdu5-image.png)
 
 ## 8. Diagrama de Atividades do Caso de Uso
 
-`imagem do diagrama, feito na disciplina de análise e projeto`
+![Diagrama de caso de uso](diagrama-cdu.jpeg)
 
 ## 9. Diagrama de Projeto do Caso de Uso
 
-`imagem do diagrama de classes de projeto, feito na disciplina de análise e projeto`
+O diagrama ainda não foi feito.
 
 ## 10. Diagrama de Sequência do Caso de Uso
 
-`imagem do diagrama, feito na disciplina de análise e projeto`
+![Diagrama de caso de uso](diagrama-cdu.jpeg)
