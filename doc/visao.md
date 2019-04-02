@@ -24,7 +24,7 @@
 
 **Não Faz Parte do Escopo**
     
-1. O sistema não terá chat para interação entre anunciante e requisitante. 
+1. O sistema não terá chat para interação entre doador e donatário. 
 1. O sistema não será responsável pela entrega dos livros.
 1. O sistema não será responsável pela avaliação do estado físico do livro.
 
