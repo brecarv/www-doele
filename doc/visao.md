@@ -37,7 +37,10 @@
 | -------- | -------- | -------- | -------- |
 | NF01 | Aplicação Web | O sistema será  inicialmente desenvolvida para plataforma Web. | Obrigatório|
 | NF02 | Play Framework | O sistema deverá ser desenvolvida utilizando o Play Framework. | Obrigatório|
-| NF03 | Emails | O Sistema deverá utilizar emails de confirmação para funções como cadastro de usuário e livros, etc. | Desejável|
+| NF03 | Envio de e-mails | O Sistema poderá utilizar emails de confirmação para funções como cadastro de usuário e livros, etc. | Desejável|
+| NF04 | Banco de dados | O Sistema deverá utilizar um SGBD  | Obrigatório|
+| NF05 | Google Books API | O Sistema poderá utilizar a API do Google Books | Desejável|
+| NF06 | Login com Redes Sociais | O Sistema poderá utilizar redes sociais como forma de login  | Desejável|
 
 
 ### 2.3 Tabela de Referência - Requisitos
