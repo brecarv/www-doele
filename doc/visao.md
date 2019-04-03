@@ -1,9 +1,11 @@
 # Documento de visão
 # www-doele
 ## 1. Introdução
-### 1.1 Resumo
+### 1.1 Definição Geral do Projeto
 
-    Texto resumindo o documento.
+   Dentro de suas casas, muitas pessoas possuem livros, HQ’s, revistas, artigos e outros tipos de materiais de leitura sobre os mais variados assuntos. Algumas destas pessoas, possuem biblioteca em suas casas e buscam estar em constante renovação do seu acervo literário; outras têm a leitura como um hobbie e buscam periodicamente livros diferentes e de seu agrado. Além desses tipos de pessoas, há ainda instituições que nem sempre conseguem manter seu acervo literário atualizado e acabam tendo que gastar grandes quantias em busca de materiais novos para o melhoramento do acervo. Para estes problemas, surge o DoeLê!<br> 
+   O DoeLê é um sistema gratuito que surge para intermediar a doação de livros (e outros materiais) entre leitores assíduos ou não, além de permitir campanhas de arrecadação de materiais de leitura para instituições e criação de gaiolas em locais específicos para a estimulação da leitura. Com o DoeLê, é sempre possível multiplicar o conhecimento.
+
 
 ### 1.2 Escopo
 
