@@ -15,8 +15,8 @@
 
 | Cod. | Nome | Descrição | Categoria |
 | -------- | -------- | -------- | -------- |
-| F01 | Cadastro de usuário | O sistema deverá permitir que os usuários possam cadastrar-se no site. |	Evidente|
-| F02 | Cadastro institucional | O sistema deverá permitir que instituições possam cadastrar-se no site. |	Evidente|
+| F01 | Cadastro de usuário | O sistema deverá permitir que os usuários possam cadastrar-se no site como doador e/ou donatário. |	Evidente|
+| F02 | Cadastro institucional | O sistema deverá permitir que instituições possam cadastrar-se no site como organização doadora e/ou donatária. |	Evidente|
 | F03 | Atualização de cadastro de usuário | O sistema deverá permitir que os usuários possam atualizar seus dados de cadastro. |	Evidente|
 | F04 | Cadastro de campanha | O sistema deverá permitir que os usuários institucionais possam solicitar a criação de campanhas de doação/arrecadação. |	Evidente|
 | F05 | Atualização de campanha cadastrada| O sistema deverá permitir que os usuários institucionais possam atualizar os dados de campanhas de doação/arrecadação cadastradas. |	Evidente|
