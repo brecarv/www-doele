@@ -23,7 +23,6 @@
 1. O sistema permitirá que os usuários façam avaliações de transações concluídas com sucesso.
 1. O sistema permitirá que os usuários façam avaliações de livros.
 1. O sistema permitirá que os usuários criem listas de desejo com livros favoritos.
-1. 
 
 **Não Faz Parte do Escopo**
     
