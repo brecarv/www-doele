@@ -15,17 +15,30 @@
 
 | Cod. | Nome | Descrição | Categoria |
 | -------- | -------- | -------- | -------- |
-| F01 | Registro no sistema | O usuário fará login no sistema para ter acesso ao material disponível no site. |	Evidente|
-| F02 | Cadastro de livros | O usuário ao fazer login no sistema poderá cadastrar livros para doação. | Evidente|
-| F03 | Busca de livros | O usuário que acessar o sistema poderá buscar pelos livros anunciados. | Evidente|
-| F04 | Solicitação de livros| O usuário logado no sistema poderá demonstrar interesse em um livro anunciado. | Evidente|
+| F01 | Cadastro de usuário | O sistema deverá permitir que os usuários possam cadastrar-se no site. |	Evidente|
+| F02 | Cadastro institucional | O sistema deverá permitir que instituições possam cadastrar-se no site. |	Evidente|
+| F03 | Atualização de cadastro de usuário | O sistema deverá permitir que os usuários possam atualizar seus dados de cadastro. |	Evidente|
+| F04 | Cadastro de campanha | O sistema deverá permitir que os usuários institucionais possam solicitar a criação de campanhas de doação/arrecadação. |	Evidente|
+| F05 | Atualização de campanha cadastrada| O sistema deverá permitir que os usuários institucionais possam atualizar os dados de campanhas de doação/arrecadação cadastradas. |	Evidente|
+| F06 | Cadastro de livro | O sistema deverá permitir que os usuários possam cadastrar livros no site | Evidente|
+| F07 | Atualização de livro cadastrado | O sistema deverá permitir que os usuários possam atualizar informações de livros cadastrados. | Evidente|
+| F08 | Buscar livros | O sistema deverá permitir que os usuários possam buscar livros no site. | Evidente|
+| F09 | Confirmar interesse em um livro | O sistema deverá permitir que os usuários possam 'confirmar interesse' em um livro disponível para doação | Evidente|
+| F10 | Confirmar interesse em uma campanha | O sistema deverá permitir que os usuários possam 'confirmar interesse' em colaborar para uma campanha institucional de arrecadação/doação | Evidente|
+| F11 | Confirmação de transação concluída | O sistema deverá permitir que os usuários envolvidos em uma doação possam confirmar que a transação foi concluída com sucesso | Evidente|
+| F12 | Avaliar transação concluída | O sistema deverá permitir usuários envolvidos em uma doação possam avaliar a transação | Evidente|
+| F13 | Avaliar livro | O sistema deverá permitir que os usuários possam avaliar(review) livros | Evidente|
+| F14 | Remoção de livro cadastrado | O sistema deverá permitir que os usuários possam excluir um livro já cadastrado no sistema | Evidente|
+
 
 ### 2.2 Requisitos não funcionais
 
 | Cod. | Nome | Descrição | Categoria |
 | -------- | -------- | -------- | -------- |
-| NF01 | Aplicação Web | A aplicação deverá ser inicialmente em um sistema Web. | Obrigatório|
-| NF02 | Play Framework | A aplicação deverá ser inicialmente desenvolvida utilizando o play framework. | Obrigatório|
+| NF01 | Aplicação Web | O sistema será  inicialmente desenvolvida para plataforma Web. | Obrigatório|
+| NF02 | Play Framework | O sistema deverá ser desenvolvida utilizando o Play Framework. | Obrigatório|
+| NF03 | Emails | O Sistema deverá utilizar emails de confirmação para funções como cadastro de usuário e livros, etc. | Desejável|
+
 
 ### 2.3 Tabela de Referência - Requisitos
 
