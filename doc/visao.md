@@ -66,4 +66,4 @@
 
 ## 3. Clientes
 
-    Texto explicando quem é o cliente
+<p> Os clientes são leitores, colecionadores de livros e instituições que queiram doar ou receber doações.
