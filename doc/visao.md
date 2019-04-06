@@ -18,17 +18,13 @@
 | F01 | Cadastro de usuário | O sistema deverá permitir que os usuários possam cadastrar-se no site como doador e/ou donatário. |	Evidente|
 | F02 | Cadastro institucional | O sistema deverá permitir que instituições possam cadastrar-se no site como organização doadora e/ou donatária. |	Evidente|
 | F03 | Atualização de cadastro de usuário | O sistema deverá permitir que os usuários possam atualizar seus dados de cadastro. |	Evidente|
-| F04 | Cadastro de campanha | O sistema deverá permitir que os usuários institucionais possam solicitar a criação de campanhas de doação/arrecadação. |	Evidente|
-| F05 | Atualização de campanha cadastrada| O sistema deverá permitir que os usuários institucionais possam atualizar os dados de campanhas de doação/arrecadação cadastradas. |	Evidente|
-| F06 | Cadastro de livro | O sistema deverá permitir que os usuários possam cadastrar livros no site | Evidente|
-| F07 | Atualização de livro cadastrado | O sistema deverá permitir que os usuários possam atualizar informações de livros cadastrados. | Evidente|
-| F08 | Buscar livros | O sistema deverá permitir que os usuários possam buscar livros no site. | Evidente|
-| F09 | Confirmar interesse em um livro | O sistema deverá permitir que os usuários possam 'confirmar interesse' em um livro disponível para doação | Evidente|
-| F10 | Confirmar interesse em uma campanha | O sistema deverá permitir que os usuários possam 'confirmar interesse' em colaborar para uma campanha institucional de arrecadação/doação | Evidente|
-| F11 | Confirmação de transação concluída | O sistema deverá permitir que os usuários envolvidos em uma doação possam confirmar que a transação foi concluída com sucesso | Evidente|
-| F12 | Avaliar transação concluída | O sistema deverá permitir usuários envolvidos em uma doação possam avaliar a transação | Evidente|
-| F13 | Avaliar livro | O sistema deverá permitir que os usuários possam avaliar(review) livros | Evidente|
-| F14 | Remoção de livro cadastrado | O sistema deverá permitir que os usuários possam excluir um livro já cadastrado no sistema | Evidente|
+| F04 | Gerenciamento de campanhas | O sistema deverá permitir que os usuários institucionais possam solicitar a criação/remoção de campanhas de doação/arrecadação. |	Evidente|
+| F05 | Gerenciamento de livros | O sistema deverá permitir que os usuários possam cadastrar/remover livros no site | Evidente|
+| F06 | Buscar livros | O sistema deverá permitir que os usuários possam buscar livros no site. | Evidente|
+| F07 | Gerenciamento de doações | O sistema deverá permitir que os usuários possam 'confirmar interesse' em livros disponíveis para doação e/ou em campanhas de doação/arrecadação. | Evidente|
+| F08 | Confirmação de transação concluída | O sistema deverá permitir que os usuários envolvidos em uma doação possam confirmar que a transação foi concluída com sucesso | Evidente|
+| F09 | Avaliar transação concluída | O sistema deverá permitir usuários envolvidos em uma doação possam avaliar a transação | Evidente|
+| F10 | Avaliar livro | O sistema deverá permitir que os usuários possam avaliar(review) livros | Evidente|
 
 
 ### 2.2 Requisitos não funcionais
