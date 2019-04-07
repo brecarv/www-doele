@@ -10,7 +10,31 @@
 
 ### 1.2 Escopo
 
-    Texto explicando qual o escopo do projeto
+**Faz Parte do Escopo**
+
+1. O sistema permitirá que os usuários se cadastrem.
+1. O sistema irá diferenciar usuários comuns(pessoas físicas) de usuários institucionais(ONG's, por exemplo).
+1. O sistema permitirá que os usuários possam editar seus dados pessoais a fim de atualização cadastral.
+1. O sistema permitirá que usuários instituicionais criem campanhas de arrecadação e doação de livros.
+1. O sistema permitirá que os usuários vejam os livros anunciados.
+1. O sistema permitirá que os usuários pesquisem livros por título e/ou autor.
+1. O sistema permitirá que usuários anunciem livros.
+1. O sistema permitirá que os usuários demonstrem interesse em doar para uma campanha de arrecadação instituicional.
+1. O sistema permitirá que os usuários demonstrem interesse em receber a doação de um livro.
+1. O sistema notificará o usuário doador quando um livro anunciado receber uma demonstração de interesse.
+1. O sistema permitirá que os usuários envolvidos em uma doação (doador e donatário)confirmem a conclusão da transação(doação) e seja 'dada baixa' no livro a ser doado.
+1. O sistema permitirá que os usuários façam avaliações de transações concluídas com sucesso.
+1. O sistema permitirá que os usuários façam avaliações de livros.
+1. O sistema permitirá que os usuários criem listas de desejo com livros favoritos.
+
+**Não Faz Parte do Escopo**
+    
+1. O sistema não terá chat para interação entre doador e donatário. 
+1. O sistema não será responsável pela entrega dos livros.
+1. O sistema não compra e/ou vende livros.
+1. O sistema não será responsável pela avaliação do estado físico do livro.
+1. O sistema não será responsável pela 'reserva' dos livros anunciados, sendo assim, a confirmação se dará entre os usuários envolvidos(doador e donatário).
+
 
 ## 2. Requisitos
 
