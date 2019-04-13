@@ -14,8 +14,15 @@ public class HomeController extends Controller {
      * this method will be called when the application receives a
      * <code>GET</code> request with a path of <code>/</code>.
      */
+    @Inject views.html.login loginTemplate;
+
+    public Result login() {
+        return ok(loginTemplate.render());
+    }
+
     public Result index() {
         return ok(views.html.index.render());
     }
+
 
 }
