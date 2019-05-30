@@ -1,0 +1,77 @@
+
+#  Especificação de Caso de Uso do Projeto Doelê
+
+# UC07: **Consultar a lista de desejos**
+
+
+## 1. Resumo
+`O ator logado no sistema seleciona a opção de lista de desejo e o sistema mostra todos os livros marcados como desajados em uma lista.`
+
+## 2. Atores
+
+`Usuario em geral (Doador ou Donatário)`
+
+## 3. Precondições
+
+### 3.1 `Possuir conta no sistema`
+
+`O ator necessita obrigatoriamente de uma conta no sistema para poder realizar o restante dos passos.`
+
+
+### 3.2 `Logar no sistema`
+
+`O ator precisa necessariamente está logado no Doelê para ter acesso à esse CDU.`
+
+### 3.3 `Existir o registro do livro no sistema`
+
+`O ator só poderá adicionar o livro a lista de desejos se o livro já estiver cadastrado no sistema Doelê`
+
+### 3.4 `Ter livros adicionados a lista de desejo`
+
+`O ator só poderá ver seus livros da lista de desejo se tiver marcado algum como desejado`
+
+
+## 4. Pós-condições
+
+### 4.1 `O livro aparecerá na lista de desejo do cliente`
+
+`O sistema retornará a página de lista de desejos`
+
+## 5. Pontos de Extensão
+`O sistema no futuro poderá vender essa informação para livrarias e também o sistema futuramente poderá alertar ao usuario quando um anuncio or cadastrado`
+
+## 6. Fluxos de Evento
+
+### 6.1 Fluxo Básico
+
+1. O ator faz login no sistema. 
+2. O sistema retorna com a página inicial 
+3. O ator seleciona a pagina de lista de desejos. 
+4. O sistema retorna com a página de lista de desejos. 
+5. CDU se encerra. 
+
+### 6.2 `Não foi adicionado livros a lista`
+
+1. O ator faz login no sistema. 
+2. O sistema retorna com a página inicial 
+3. O ator seleciona a pagina de lista de desejos. 
+4. O sistema retorna com a página de lista de desejos em branco. 
+5. O sistema mostra uma mensagem e retorna a tela inicial
+### 6.3 ` Não identificado`
+
+
+## 7. Protótipos de Interface do Caso de Uso
+
+`imagem do protótipo, é feita na disciplina de implementação e testes`
+
+## 8. Diagrama de Atividades do Caso de Uso
+
+`imagem do diagrama, feito na disciplina de análise e projeto`
+
+## 9. Diagrama de Projeto do Caso de Uso
+
+`imagem do diagrama de classes de projeto, feito na disciplina de análise e projeto`
+
+## 10. Diagrama de Sequência do Caso de Uso
+
+`imagem do diagrama, feito na disciplina de análise e projeto`

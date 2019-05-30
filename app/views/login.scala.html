@@ -1,65 +1,50 @@
-@this(webJarsUtil: org.webjars.play.WebJarsUtil)
+@layout{
+    <link href="@routes.Assets.versioned("stylesheets/login.css")"
+rel="stylesheet" media="screen">
+    <title>Doelê | Login</title>
 
+}{
+    <div class="tela-completa">
+        <nav class="navbar navbar-light">
+            <a class="icone-nav" href="/">
+                <i class="fas fa-arrow-left" style="margin-left: 3vw important;"></i>
+            </a>
+            <a class="navbar-brand" href="/">
+                <img src="@routes.Assets.versioned("images/logo-doele-livro-gradiente.png")" width="50" class="d-inline-block align-top" alt="">
+            </a>
+        </nav>
 
-<!DOCTYPE html>
-<html>
+        <hr>
 
-<head>
-  <title>Doelê - Login</title>
-  @webJarsUtil.locate("bootstrap.min.css").css()
-
-  <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
-  @webJarsUtil.locate("bootstrap.js").script()
-</head>
-
-<body>
-  <div class="container-fluid">
-    <div class="row no-gutter">
-      <div class="row align-items-center justify-content-center col-md-4 col-lg-4 bg-image">
-        <div class="text-center mw-50 mh-50 p-3 logo-doele">
-        </div>
-      </div>
-      <div class="col-md-8 col-lg-6">
-        <div class="login d-flex align-items-center py-5">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-9 col-lg-8 mx-auto">
-                <h3 class="login-heading mb-4">Entrar no Doelê</h3>
-                <form>
-                  <div class="form-label-group">
-                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                    <label for="inputEmail">Email</label>
-                  </div>
-
-                  <div class="form-label-group">
-                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                    <label for="inputPassword">Senha</label>
-                  </div>
-
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">Lembrar senha</label>
-                    <div class="text-sm-right">
-                      <a href="#">Esqueceu sua senha?</a>
+        <div class="conteudo ">
+            <div class="caixa ">
+                @if(flash.contains("registrado")) {
+                <div class="alert alert-success" role="alert">
+                    <strong>Registrado! </strong>Oba! Você foi registrado!
+                </div>
+                }
+                @if(flash.contains("logout")) {
+                <div class="alert alert-warning" role="alert">
+                    <strong>Saiu! </strong>Você foi deslogado do Doelê!
+                </div>
+                }
+                <form action="/login" method="POST">
+                    <b><legend class="titulo-box">Entrar</legend></b>
+                    <label>Email:</label><br>
+                    <input type="email" name="email" class="form-control" id="exampleInput" aria-describedby="emailHelp" placeholder="Enter email">
+                    <!-- <small id="emailHelp " class="form-text text-muted ">tes=xto que fica em baixo do campo de entrada.</small> -->
+                    <br>
+                    <label>Senha:</label><br>
+                    <input type="password" name="senha" class="form-control" id="exampleInput" placeholder="Password">
+                    <br>
+                    <div class="botao">
+                        <input class="botao-enviar" type="submit" value="Enviar">
                     </div>
-                  </div>
-                  <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Entrar</button>
+                    <p>Não tem uma conta? <a href="/registro"> Registre-se!</a></p>
 
-                  <div class="text-md-center">
-                    <p>
-                      Não tem conta? <a href="#">Registrar</a>
-                    </p>
-                  </div>
                 </form>
-
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+}
 
-</body>
-
-</html>

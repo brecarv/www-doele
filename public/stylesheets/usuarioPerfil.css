@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+
+*{
+    font-family: 'Roboto', sans-serif ;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin-top: 7em;
+    margin-bottom: 3.5em;
+}
+.row{
+    margin-right: 2em !important;
+    margin-left: 2em !important;
+}
+
+.area-usuario{
+    height: 500px; 
+    padding: 0;
+    box-shadow: 0 0 5px 1px #ddd;
+    background: white;
+    /* background: #ccc; */
+
+}
+.conteudo-usuario{
+    min-height: 460px;
+    max-width: 87.666667% !important;
+    flex: 1 0 66.666667% !important;
+    padding: 0;
+    /* background: rgb(105, 105, 105); */
+    /* margin-bottom: em; */
+
+}
+.titulo-conteudo{
+    width: auto;
+    height: 80px;
+    background: white;
+    box-shadow: 0 0 5px 1px #ddd;
+}
+.titulo-conteudo span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #A2A2A2;
+}
+
+.titulo-conteudo span i{
+    font-size: 25px;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 0.2em;
+}
+.card-conteudo{
+    margin-top: 1.5em;
+    width: auto;
+    min-height: 460px;
+    background: white;
+    box-shadow: 0 0 5px 1px #ddd;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-decoration: none;
+
+}
+.sem-doacao{
+    width: auto;
+    height: 300px;
+    text-align: center;
+    color: #808080;
+    /* border:  1px solid red; */
+    
+}
+.sem-doacao-bg{
+    width: auto;
+    height: 120px;
+    margin-top: 2.4em;
+    /* background: #808080; */
+    background:  url("../images/bg-books.png") ;
+    opacity: 0.15;
+    box-shadow: 0px 30px 120px rgba(255, 255, 255, 0.699) inset;
+}
+
+.anuncio-usuario{
+    width: auto;
+    height: 180px;
+    background: white;
+    box-shadow: 0 0 5px 1px #ddd;
+    margin: 1em 2.4em;
+    
+    
+}
+.anuncio-usuario:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 8px 1px;
+
+}
+.detalhes-anuncio{
+    display: inline-block;
+    margin-top: 2em;
+    margin-left: 2em;
+    color: #808080;
+    
+
+}
+.titulo-livro{
+    font-size: 22px;
+    font-weight: bold;
+}
+.opcoes-anuncio{
+    margin-top: 1em;
+    margin-right: 1em;  
+    float: right;  
+}
+.opcoes-anuncio a{
+    margin-right: 0.5em;
+    color: #808080;
+    text-decoration: none;
+    display: inline-table;
+}
+
+.texto-sem-doacao{
+    display: inline-block;
+    margin-top: 4em;
+    font-size: 25px;
+    font-weight: bold;
+}
+.texto-sem-doacao2{
+    color:#a7a7a7;
+}
+.btn-doar-usuario{
+    margin-top: 2em;
+}
+
+.area-vazia{
+    display: block;
+}
+
+.area-nao-vazia{
+    display: block;
+}
+.capa-usuario{
+    width: auto;
+    height: 80px;
+
+    background: orange;
+}
+.foto-usuario{
+    max-width: 120px;
+    min-width: auto;
+    height: 120px;
+
+    border-radius: 100px;
+    border: 2.2px solid white;
+ 
+    position: absolute;
+    top: 1em;
+    left: 0; 
+    right: 0; 
+    margin: 0 auto;
+    overflow: hidden;
+    background: #cacaca;
+
+}
+
+.foto-usuario img{
+    width: 100%;
+    margin: 0px 0 0 0px;
+
+}
+.detalhes-usuario{
+    width: auto;
+    height: 70px;
+    margin-top: 4.5em;
+    text-align: center;
+
+    /* background: rgb(165, 73, 73); */
+}
+.nome-usuario{
+    font-size: 18px;
+    font-weight: bold;
+    color: #808080;
+}
+.data-usuario{
+    font-size: 12px;
+    color: #a7a7a7;
+}
+.usuario-menu{
+    /* border: 1px solid rgb(165, 73, 108); */
+    width: auto;
+    height: 215px;
+    text-align: left;
+    margin: 1.4em 2em;
+}
+.usuario-menu a{
+    color: #A2A2A2;
+    display: inline-block;
+    /* margin-bottom: 1.2em; */
+    padding: 0.6em;
+    text-decoration: none;
+}
+.usuario-menu a span{
+    font-weight: bold;
+    font-size: 14px;
+}
+.usuario-menu a i{
+    margin-right: 0.4em;
+}
+.usuario-menu a:hover{
+    color: #808080;
+}

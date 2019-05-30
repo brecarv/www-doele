@@ -1,6 +1,17 @@
-@()
+@(anuncios: List[Anuncio])
+@layout{
+  <title>LOG - TESTE</title>
+}{
+  <h1>Livros anunciados pelo usuário</h1>
+  <i class="fa fa-remove"></i>
+  <table class="table table-striped table-bordered table-sm">
+    <thead class="thead-dark">
+      <tr><th scope="col">Livro</th>
+          <th scope="col">E-mail doador</th>
+        </tr>
+    </thead>
+    <tbody>
 
-@main("www-doele") {
-  <h1>Bem vindo ao www-doele.</h1>
-  (by Jorgiano M B Vidal)
+    </tbody>
+  </table>
 }

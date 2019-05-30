@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    color: orange !important;
+}
+
+.navbar{
+    margin: 0 5em;
+    background-color: white !important;
+}
+
+.icone-nav{
+    margin-top: 1em;
+}
+
+.fa-arrow-left{
+    font-size: 22px;
+    color: rgb(138, 138, 138);
+}
+
+h1{
+    font-weight: 100 !important;
+    text-align: center;
+    padding-top: 2em;
+    color: gray;
+}
+
+.link-overlay{
+    display: block;
+    text-align: center;
+}
+
+.upload-foto-container{
+    width: 800px;
+    height: 250px;
+    /* border: 1px solid red; */
+    margin: 5em  auto;
+    text-align: center;
+}
+.upload-foto-container ul{
+    list-style: none;
+}
+.upload-foto-container ul li{
+    color: #ccc;
+    float: left;
+}
+
+.upload-foto-container ul li p{
+    font-size: 18px;
+    margin-top: -3em;
+}
+.upload-foto-card{
+    width: 200px;
+    height: 200px;
+    border: 2px dotted #ccc;
+    margin: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.fa-camera{
+    margin: 1.7em;
+    font-size: 38px;
+}
+
+.upload-foto-container ul li :hover{
+    color: rgb(138, 138, 138);
+}
+
+label{
+    /* margin-top: 2em; */
+    color: rgb(160, 160, 160);
+    font-weight: 700;
+}
+.col{
+    margin-top: 2em;
+}
+.container{
+    width: 70% !important;
+}
+
+.btn{
+    height: 70px;
+    width: 250px;
+    margin: 4em auto;
+    background: #fea933 !important;
+    border: none !important;
+    text-shadow: 1px 1px 1px #9c671c; 
+}
+.btn:hover{
+    background: #f89e1f !important;
+}
+
+form{
+    margin-top: -50px;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: rgb(85, 84, 84);
+}
+  
+footer p {
+    margin-bottom: .25rem;
+    color: white;
+}
+footer a{
+    color: orange;
+}
+footer a:hover{
+    color: orange;
+}
+
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 2;
+  overflow-y: scroll;
+}
+
+#btn-busca{
+    margin: 1em auto;
+    background: #fea933 !important;
+    border: none !important;
+    padding: 0.3em;
+    text-shadow: 1px 1px 1px #9c671c;
+    color: white;
+    border-radius: 2px;
+}
+
+#sair-btn{
+    background: transparent;    
+    border: none;
+    font-size: 25px;
+    color: gray;
+}
+
+.area-de-busca{
+    margin-top: 7em;
+}

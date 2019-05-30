@@ -1,0 +1,43 @@
+@layout{
+  <link href="@routes.Assets.versioned("stylesheets/registro.css")"
+rel="stylesheet" media="screen">
+  <title>Doelê | Registro</title>
+}{
+        <div class="tela-completa">
+            <nav class="navbar navbar-light">
+                <a class="icone-nav" href="/">
+                    <i class="fas fa-arrow-left" style="margin-left: 3vw important;"></i>
+                </a>
+                <a class="navbar-brand" href="/">
+                    <img src="@routes.Assets.versioned("images/logo-doele-livro-gradiente.png")" width="50" class="d-inline-block align-top" alt="">
+                </a>
+            </nav>
+
+            <hr>
+
+            <div class="conteudo">
+                <div class="caixa">
+                    <form action="/registro" method="POST">
+                        <b> <legend class="titulo-box">Registro</legend> </b>
+                        <label>Nome:</label> <br>
+                        <input type="name" class="form-control" name="nome" id="exampleInput" aria-describedby="emailHelp" placeholder="Nome" required>
+                        <br>
+                        <label>CPF:</label> <br>
+                        <input type="text" class="form-control" name="cpf" id="exampleInput" aria-describedby="emailHelp" placeholder="Digite seu CPF" required>
+                        <br>
+                        <label for="">E-mail:</label> <br>
+                        <input type="email" class="form-control" name="email" id="exampleInput" aria-describedby="emailHelp" placeholder="Digite seu e-mail" required>
+                        <br>
+                        <label for="">Senha:</label><br>
+                        <input type="password" class="form-control" name="senha" id="exampleInput" aria-describedby="emailHelp" placeholder="Digite sua senha" required>
+
+                        <div class="botao">
+                            <input class="botao-enviar" type="submit" value="Enviar">
+                        </div>
+                        <p>Já tem uma conta? <a href="/login"> Entrar</a></p>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+      }

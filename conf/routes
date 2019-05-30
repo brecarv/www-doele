@@ -2,13 +2,33 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
+# Login
+GET		/login						controllers.LoginController.login
+POST	/login						controllers.LoginController.dados_login
+
+GET		/registro					controllers.RegistroController.registro
+POST	/registro					controllers.RegistroController.dados_registro
+
+GET		/logout						controllers.LoginController.logout
+
+
 # An example controller showing a sample home page
-GET     /                           controllers.HomeController.index
-GET     /login                      controllers.HomeController.login
+GET     /perfil                                     controllers.UsuarioController.perfil()
+
+GET     /log                                        controllers.LivroController.index()
+
+GET     /                                           controllers.LivroController.inicio()
+
+GET     /livros                                     controllers.LivroController.livros()
+
+GET     /livros/cadastro-livro                      controllers.LivroController.cadastroLivro()
+POST    /livros/cadastro-livro                      controllers.LivroController.salvarCadastro()
+
+GET     /livros/:isbn                               controllers.LivroController.verLivro(isbn : String)   
+
+
+GET     /livros/anuncio/:id                                 controllers.LivroController.verAnuncio(id : String)   
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
-
-# WebJars
-->          /webjars                webjars.Routes
 

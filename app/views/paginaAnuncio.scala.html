@@ -1,0 +1,164 @@
+@(anuncio : Anuncio, livro : Livro) 
+
+@layout{
+  <link href="@routes.Assets.versioned("stylesheets/menu-doele.css")"
+  rel="stylesheet" media="screen">
+    <link href="@routes.Assets.versioned("stylesheets/paginaAnuncio.css")"
+rel="stylesheet" media="screen">
+    <title>Doelê | Anuncio: @livro.getTitulo</title>
+
+}{
+    <header class="header">
+            <nav class="nav navbar navbar-expand-lg navbar-light fixed-top">
+                <!-- brand -->
+                <a class="navbar-brand" href="/">
+                    <img src="@routes.Assets.versioned("images/logo-doele-livro-gradiente.png")" width="40" height="40" class="d-inline-block align-top" alt="Doelê">
+                </a>
+    
+                <!-- btn colapsado -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- busca -->
+                    <div class="input-group barra-busca">
+                        <input type="text" class="form-control" placeholder="Buscar">
+                        <div class="input-group-append">
+                            <button class="btn btn-busca btn-outline-secondary" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>                       
+                    </div>
+                    
+                    <!-- itens menu -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">INÍCIO<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ANUNCIOS</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/livros">LIVROS </a>
+                        </li>
+                    </ul> 
+    
+                    <!-- btn login e doar -->
+                    <div class="nav-direita">
+                        @if(session().get("email") == null){
+                        <div class="login-user-area deslogado">
+                            <a href="/login" class="btn-login">
+                                <img class="img-user" src="@routes.Assets.versioned("images/user01.png")" alt="" width="18" >
+                                <span>Login</span>
+                            </a>   
+                        </div>
+                        }else{
+                            <div class="login-user-area logado">
+                                    <a href="#" class="btn-login dropdown-toggle" role="button" id="dropdownUsuario"  data-toggle="dropdown">
+                                        <img class="img-user" src="@routes.Assets.versioned("images/user02.png")" alt="" width="18" >
+                                        <span>Perfil</span>
+                                    </a>
+                                    <div class="dropdown-menu dropdownUsuario" aria-labelledby="dropdownUsuario">
+                                        <a class="dropdown-item" href="/perfil">Perfil</a>
+                                        <a class="dropdown-item" href="#">Notificações</a>
+                                        <a class="dropdown-item" href="/logout">Sair</a>
+                                    </div>    
+                                </div>
+                                
+                        }
+                        
+                        <div class="quero-doar-area">
+                                <a href="/livros/cadastro-livro">
+                                    <button type="button" class="btn-doar btn btn-primary">Quero Doar</button>   
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    
+    
+        <div class="container">
+            <div class="titulo-area-anuncio">
+                <h2>Anúncio: @livro.getTitulo</h2>
+                <span>Doador: @anuncio.getDoador().getNome</span>
+            </div>
+            <div class="slider-fotos">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+    
+                <!-- INDICADORES -->
+                  <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                  </ul>
+                  
+                  <!-- SLIDER -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src= "@routes.Assets.versioned("images/foto-wide.png")" alt="DOELE" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item">
+                      <img src= "@routes.Assets.versioned("images/foto-wide.png")" alt="DOELE" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item">
+                      <img src= "@routes.Assets.versioned("images/foto-wide.png")" alt="DOELE" width="1100" height="500">
+                    </div>
+                  </div>
+                  
+                  <!-- CONTROLES -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+            </div>
+    
+            <div class="livro-anuncio">
+                <div class="thumb-livro-info">
+                    <img src="@livro.getThumbCover" alt="">
+                </div>
+                <div class="area-infos">
+    
+                    <div class="autor-livro-info">
+                        <b><span >Autor: @livro.getAutor</span><br>
+                        <span >Estado: @anuncio.getEstadoLivro</span><br>
+                        <span >Quantidade: @anuncio.getQuantidade</span><br></b>
+                    </div>
+    
+                </div>
+    
+                <div class="interesse-area">
+                    <label for="">Mensagem</label>
+                    <textarea class="form-control" id="descricao" rows="5"></textarea>
+                    <a  href="#">
+                        <button type="button" class=" btn-interesse btn btn-primary">Tenho Interesse</button>
+                    </a>
+                </div>
+                
+            </div>
+    
+            <div class="descricao-area">
+    
+                <h4>Descrição</h4>
+                <p>
+                @anuncio.getDescricaoAnuncio
+                </p>
+            </div>
+        </div>
+       
+    
+        
+        
+        <footer class="text-muted navbar-fixed-bottom">
+            <div class="footer">
+                <p class="float-right">
+                    <a href="#">Voltar ao topo</a>
+                </p>
+                
+                <p>2019 &copy; Doelê</p>
+            </div>
+        </footer>
+}

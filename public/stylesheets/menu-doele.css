@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+
+*{
+    font-family: 'Roboto', sans-serif ;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth !important; /*PERMITE O SCROOL SUAVE ENTRE AS ANCORAS*/
+}
+.body{
+    background: #F7F7F7 !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+/* ============================ MENU - CSS (INICIO) ============================*/
+.nav{
+    background: white;
+    border-bottom: 2px solid #DDDDDD;
+    height: 4em;
+}
+.navbar-nav{
+    margin-left: 1.5em;
+    margin-top: 15px;
+}
+.navbar-nav .nav-item{
+    font-size: 12px;
+    margin: 0 !important;
+    padding: 4px!important;
+    transition: ease .3s;
+    border-bottom: 0px solid orange;
+    font-weight: bold;
+    color: rgb(173, 173, 173);
+}
+.navbar-nav .active {
+    border-bottom: 5px solid orange;
+}
+.navbar-nav .nav-item:hover{
+    border-bottom: 5px solid orange;
+    transition: ease .3s;
+
+}
+.barra-busca{
+    width: 25% !important;
+    position: absolute !important;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
+}
+.barra-busca input{
+    border-radius: 0;
+    border-right: none;
+    font-size: 12px;
+    line-height: 24px;
+    height: 40px;
+}
+.barra-busca .btn-busca{
+    border-radius: 0;
+    border: 1px solid #ccc;
+    border-left: none;
+    color: orange;
+    font-size: 14px;
+    background: white;
+
+}
+.barra-busca .btn-busca:hover{
+    color: rgb(255, 153, 0);
+    border: 1px solid #ccc;
+    border-left: none;
+    background: white;
+}
+
+.nav-direita{
+    position: absolute;
+    width: 320px ;
+    height: 4em;
+    right: 0;
+}
+.login-user-area{
+    position: absolute;
+    width: 169px ;
+    height: 4em;
+    /* background: red; */
+    left: 0;
+    top: -0.8px;
+}
+.quero-doar-area{
+    position: absolute;
+    width: 151px ;
+    height: 4em;
+    /* background: blue; */
+    right: 0;
+    top: -0.8px;
+}
+.btn-doar{
+    width: 150px ;
+    height: 4.35em;
+    border-radius: 0 !important;
+    background: orange !important;
+    border: none !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    transition: ease .3s;
+}
+.btn-doar:hover{
+    background: rgb(255, 153, 0) !important;
+    transition: ease .3s;
+}
+.btn-login{
+    color: #9B9B9B;
+    font-weight: bold;
+    padding: 1.4em 3.19em;
+    text-decoration: none !important;
+    /* background: red; */
+    transition: ease .3s;
+}
+.btn-login:hover{
+    background: #f1f1f1;
+    color: #9B9B9B;
+    transition: ease .3s;
+}
+.btn-login span{
+    vertical-align: middle !important;
+    line-height: 4.5em;
+    margin-left: 0.5em;
+    font-size: 15px;
+}
+/* ============================ MENU - CSS (FIM) ============================*/
+
+/* ============================ FOOTER - CSS ============================== */
+.footer{
+    width: 90%;
+    margin: 0 auto;
+}
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: rgb(85, 84, 84);
+    clear: both;
+}
+
+footer p {
+    margin-bottom: .25rem;
+    color: white;
+}
+footer a{
+    color: orange;
+}
+footer a:hover{
+    color: orange;
+}
+
+
+/* Remove simbolo de dropdown do botao do usuario */
+.dropdown-toggle:after { content: none; }
+.logado{ display: block;}
+.deslogado{ display: block;}
+
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1214px;
+    }
+}
+
+@media (max-width: 991px){
+    .lista-livros .livro{
+        display: block;
+    }
+    
+}
+/* ========================= FOOTER - CSS (FIM) =========================== */

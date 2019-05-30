@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+
+*{
+    font-family: 'Roboto', sans-serif ;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth; /*PERMITE O SCROOL SUAVE ENTRE AS ANCORAS*/
+}
+
+.container{
+    margin-top: 7em;
+    margin-bottom: 3.5em;
+}
+.navbar-nav .nav-item{
+    border-bottom: 5px solid white;
+}
+
+/* ============================== */
+
+.card-livro-anuncio{
+    width: 220px;
+    height: 300px;
+    background: #f1f1f1;
+    border: 1px solid #dadada;
+    /* box-shadow: 0 0 5px 1px #ddd; */
+    /* margin: 5em 0; */
+    overflow:   hidden;
+    border-radius: 10px;
+    margin: 2em 1em;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.card-livro-anuncio:hover .area-detalhes{
+    height: 110px;
+}
+.card-livro-anuncio:hover{
+    box-shadow: 0 0 5px 1px #ddd;
+}
+
+
+
+.area-thumb{
+    width: 220px;
+    height: 200px;
+    /* border: 1px solid green; */
+    
+}
+.area-thumb img{
+    width: 100%;
+    object-fit: cover;
+}
+.area-detalhes{
+    width: 218px;
+    height: 0;
+    /* border: 1px solid red; */
+    background:white;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9.5px;
+    bottom: -.6em;
+    left: 0;
+    right: 0;
+    padding: .6em 0  0 .6em;
+    position: absolute;
+
+    transition: .4s ease;
+
+}
+
+.titulo-livro{
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(88, 88, 88);  
+}
+
+.publicacao-livro{
+    font-size: 13px;
+    color:rgb(160, 160, 160);
+}
+
+.nome-autor{
+    font-size: 13px;
+    font-weight: thin;
+    color:rgb(160, 160, 160);
+}
+
+.container-anuncios{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.titulo-area-anuncio{
+    margin-top: 3em;
+}
+
+.titulo-area-anuncio h2{
+    font-size: 25px;
+}
+.titulo-area-anuncio span{
+    font-size: 16px;
+}
+
+.slider-fotos{
+    margin-top: 2em;
+    width: 600px;
+    height: 350px;
+    background: #ccc;
+    float: left;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.livro-anuncio{
+    margin-top: 2em;
+    width: 400px;
+    height: 350px;
+/*    background: #ccc;
+*/    float: right;
+}
+
+.thumb-livro-info{
+    position: absolute;
+    width: 130px;
+    height: 193px;
+    background: #f1f1f1;
+    border: 1px solid #dadada;
+    /* box-shadow: 0 0 5px 1px #ddd; */
+     margin: 1em ; 
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.thumb-livro-info img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.area-infos{
+    margin-top: 1em;
+}
+
+
+.autor-livro-info{
+    position: absolute;
+
+    /*border: 1px solid red;*/
+    padding: 0;
+    margin-left: 10em;
+}
+
+.autor-livro-info span{
+    font-size: 13px;
+}
+
+.descricao-area{
+    width: 600px;
+    height: 250px;
+    /*background: red;*/
+    float: left;
+    margin: 2em 0;
+
+}
+.btn-interesse{
+    margin-top: 2em;
+    display: block;
+    width: 100% !important;
+    height: 50px;
+    background: orange;
+    border: none;
+}
+.btn-interesse:hover{
+    background: #f89e1f !important;
+}
+.interesse-area{
+    margin-top: 14em;
+    margin-left: 1em;
+}
+.interesse-area a{
+    text-decoration: none;
+
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 1214px;
+    }
+}
+
+@media (max-width: 991px){
+    .lista-livros .livro{
+        display: block;
+    }
+    
+}

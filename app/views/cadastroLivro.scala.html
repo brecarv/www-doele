@@ -1,0 +1,148 @@
+@layout{
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/cadastroLivro.css")">
+    <title>Cadastro Livro</title>
+}{
+    <nav class="navbar navbar-light">
+        <a class="icone-nav" href="/">
+        <i class="fas fa-arrow-left"></i>
+        </a>
+
+        <a class="navbar-brand mx-auto" href="/">
+        <img src="@routes.Assets.versioned("images/logo-doele-livro-gradiente.png")" width="50" class="d-inline-block align-top" alt="">
+        </a>
+        
+        <a class="icone-nav" href="/perfil">
+        <img src="@routes.Assets.versioned("images/icone-usuario.png")" width="45" alt="">
+        </a>
+    </nav>
+    <hr>
+
+    <div id="overlay">
+        <div class="container-livros">
+            <button id="sair-btn" onclick="off()">X</button>
+            <h1>Qual é o seu livro?</h1>
+            <form action="" method="" onsubmit="return false">    
+                <div class="area-de-busca">
+                    <input type="search" style="width: 50%;" class="form-control mx-auto" id="search" placeholder="Nome/Autor">
+                    <button type="submit" id="button" style="margin-top: 1em;"class="btn btn-primary mx-auto d-block">Buscar</button>
+                           
+                    
+                </div>
+            </form>
+
+            <div >
+                <ol style="list-style: none;" id="results">
+                        
+                </ol>
+                </div>
+            </div>
+    </div>    
+   
+    <div class="container">
+        <h1>Cadastro de Livro</h1>
+
+        <a class="link-overlay" href="#" onclick="on()">Busque seu livro antes de preencher</a>
+
+        <div class="upload-foto-container">
+            <ul>
+                <li>
+                    <div class="upload-foto-card">
+                    <i class="fas fa-camera"></i>
+                    <p>Adicionar foto</p>                
+                    </div>
+                </li>
+                <li>
+                    <div class="upload-foto-card">
+                    <i class="fas fa-camera"></i>
+                    <p>Adicionar foto</p>                
+                    </div>
+                </li>
+                <li>
+                    <div class="upload-foto-card">
+                    <i class="fas fa-camera"></i>
+                    <p>Adicionar foto</p>                
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <form action="@controllers.routes.LivroController.salvarCadastro()" method="POST">    
+            
+            <div class="row">
+                <div class="col">
+                    <label for="titulo">título</label>
+                    <input type="text" class="form-control" id="titulo" value="" name="titulo" required>
+                </div>
+                <div class="col">
+                    <label for="autor">autor</label>
+                    <input type="text" class="form-control" id="autor" value="" name="autor" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="isbn">ISBN</label>
+                    <input type="text" class="form-control" id="isbn" value="" name="isbn" required>
+                    <input style="display: none" type="text" class="form-control" id="capa-value" value="/assets/images/foto.png" name="thumb">
+                </div>
+                <div class="col">
+                    <label for="ano">ano de publicação</label>
+                    <input type="number" class="form-control" id="ano" value="" name="ano" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">        
+                    <label for="quantidade">quantidade</label>
+                    <input type="number" class="form-control" id="quantidade" name="quantidade" required>
+                </div>
+                
+                <div class="col">
+                    <label for="estado">condições do material</label>
+                    <select class="custom-select" id="estado" name="estado">
+                        <option selected disabled>selecione...</option>
+                        <option value="Bom">Bom</option>
+                        <option value="Usado">Usado</option>
+                        <option value="Usado">Novo</option>
+                        <option value="Esse tem história (Regular)">Esse tem história (Regular)</option>
+                    </select>
+                </div>
+            </div>
+
+            <label for="">descrição</label>
+            <textarea class="form-control" id="descricao" name="descricao" rows="5"></textarea>
+
+            
+            <button type="submit" class="btn btn-primary mx-auto d-block">colocar para doação</button>
+
+        </form>
+    </div>
+
+
+
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Voltar ao topo</a>
+            </p>
+            
+            <p>2019 &copy; Doelê</p>
+        </div>
+    </footer>
+
+
+
+    <!-- ====================================SCRIPTS============================================= -->
+    <script>
+        function on() {
+          document.getElementById("overlay").style.display = "block";
+          document.getElementById("overlay").style.marginLeft = "0";
+        }
+
+        function off() {
+          document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+    <script src="@routes.Assets.versioned("javascripts/googleBooks.js")"></script>
+    
+}

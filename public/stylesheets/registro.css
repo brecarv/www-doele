@@ -1,0 +1,202 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.tela-completa {
+    width: 100vw;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    height: 12vh;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    
+}
+
+
+.navbar-brand{
+    margin-right: 47vw;
+}
+
+i.fas {
+    color: grey;
+}
+
+img {
+    justify-content: center;
+}
+
+.conteudo {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 24vw;
+    height: 78vh;
+}
+
+form {
+    width: 23vw;
+    height: 70vh;
+    background: white;
+    box-shadow: 0px 1px 5px 2px rgba(184, 184, 184, 1);
+    border-radius: 5px;
+}
+
+.titulo-box {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 4vh;
+    margin-top: 2vh;
+}
+
+#exampleInput {
+    margin-bottom: 1vh;
+    margin-left: 2vw;
+    border-radius: 5px;
+    border: 1px solid rgb(254, 131, 42);
+    width: 18vw;
+    height: 7%;
+    display: inline-flex;
+}
+
+.botao {
+    width: 22vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
+    margin-top: 2vh;
+}
+
+.botao-enviar {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    border: transparent;
+    justify-content: center;
+    align-self: center;
+    width: 9vw;
+    height: 5vh;
+    background-color: rgb(254, 131, 42);
+    display: flex;
+    color: white;
+    margin-bottom: 2vh;
+}
+
+p a {
+    color: rgb(254, 131, 42);
+    margin-left: 3px;
+}
+
+p {
+    justify-content: center;
+    display: flex;
+}
+
+label {
+    margin-left: 2vw;
+    color: grey;
+    font-size: 0.8em;
+    margin-bottom: 0% !important;
+}
+
+hr {
+    margin: 0%;
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+}
+
+@media(max-width: 400px) {
+    p a {
+        flex-flow: column;
+    }
+    form {
+        width: 15em;
+    }
+    #exampleInput {
+        margin-bottom: 1vh;
+        margin-left: 2vw;
+        border-radius: 5px;
+        border: 1px solid rgb(254, 131, 42);
+        width: 14em;
+        height: 5vh;
+        display: inline-flex;
+    }
+    .botao-enviar {
+        margin-top: 2vh;
+        margin-bottom: 3vh;
+        border-radius: 10px;
+        border: transparent;
+        justify-content: center;
+        align-self: center;
+        width: 4em;
+        height: 5vh;
+        background-color: rgb(254, 131, 42);
+        display: flex;
+        color: white;
+        margin-bottom: 2vh;
+    }
+    .botao {
+        width: 15em;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3vh;
+        margin-top: 2vh;
+    }
+}
+
+@media(max-width: 1120px) {
+    p a {
+        flex-flow: column;
+    }
+    form {
+        width: 16em;
+    }
+    #exampleInput {
+        margin-bottom: 1vh;
+        margin-left: 2vw;
+        border-radius: 5px;
+        border: 1px solid rgb(254, 131, 42);
+        width: 14em;
+        height: 5vh;
+        display: inline-flex;
+    }
+    .botao-enviar {
+        margin-top: 2vh;
+        margin-bottom: 3vh;
+        border-radius: 10px;
+        border: transparent;
+        justify-content: center;
+        align-self: center;
+        width: 4em;
+        height: 5vh;
+        background-color: rgb(254, 131, 42);
+        display: flex;
+        color: white;
+        margin-bottom: 2vh;
+    }
+    .botao {
+        width: 15em;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3vh;
+        margin-top: 2vh;
+    }
+}
