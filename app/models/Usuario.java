@@ -5,6 +5,8 @@ import io.ebean.*;
 import play.data.format.*;
 import play.data.validation.*;
 
+
+
 @Entity
 @Table(name = "usuarios")
 public class Usuario extends Model{

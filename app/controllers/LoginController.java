@@ -14,7 +14,7 @@ public class LoginController extends Controller {
     public Result dados_login() {
     	Map<String, String[]> r = request().body().asFormUrlEncoded();
     	String email = r.get("email")[0];
-		String senha = r.get("senha")[0];
+			String senha = r.get("senha")[0];
 		
 
 		if (Usuario.find.byId(email) == null){

@@ -7,7 +7,7 @@ import play.data.validation.*;
 
 @Entity
 @Table(name = "livros")
-public class Livro {
+public class Livro extends Model{
 	@Id
 	private String isbn;
 
@@ -75,5 +75,5 @@ public class Livro {
 		this.thumbCover = thumbCover;
 	}
 
-	public static final Finder<Long, Livro> find = new Finder<>(Livro.class);
+	public static final Finder<String, Livro> find = new Finder<>(Livro.class);
 }
